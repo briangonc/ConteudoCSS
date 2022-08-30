@@ -1,0 +1,283 @@
+
+/* Comentário em CSS */
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    color: gray;
+}
+
+h2 {
+    color: burlywood;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* Classes e ID's */
+
+.p-texto {
+    color: lightgreen;
+}
+
+#titulo-app {
+    color: blueviolet;
+    font-size: 40px;
+}
+
+/* Especificidade */
+
+div p {
+    color: red;
+}
+
+.p-dentro-da-div {
+    color: blue;
+}
+
+#p-super-especifico {
+    color: black;
+}
+
+/* Cores */
+
+.nome {
+    color: orange;
+}
+
+.hexa {
+    color: #6a40c4;
+}
+
+.rgba {
+    color: rgb(120, 30, 40, 1);
+}
+
+/* Backgrounds */
+
+.div-background {
+    background-image: url('img/por-do-sol.jpg');
+    height: 300px;
+}
+
+.titulo-background {
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Fontes */
+
+.family {
+    color: #000;
+    font-size: 40px;
+}
+
+.family.serif {
+    color: green;
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.variant {
+    font-variant: small-caps;
+}
+
+/* Box Model */
+
+body {
+    margin: 0;
+}
+
+.paragrafobox {
+    color: #000;
+    margin: 0;
+}
+
+.boxmodel {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* Geral - todos os lados */
+    padding: 20px;
+
+    /* Específico */
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+
+    /* Específico Agrupado - top, right, bottom, left */
+    padding: 20px 15px 30px 10px;
+
+    /* Específico Agrupado 3 Medidas - top, right-left, bottom */
+    padding: 20px 10px 30px;
+
+    /* Específico Agrupado 2 Medidas - top-bottom, right-left */
+    padding: 30px 20px;
+    border: 3px solid blue; /* tamanho - tipo - cor */
+    border-width: 5px 10px 2px 10px;
+    border-left: 10px dotted purple;
+    border-right: double;
+    border-radius: 50px;
+
+    margin: 50px;
+    margin: 5px 10px 20px 35px;
+    display: inline-block;
+    display: block;
+}
+
+/* Positions - Static, Relative, Fixed, Sticky */
+
+.div-position {
+    width: 500px;
+    height: 500px;
+    background-color: #6a40c4;
+}
+
+/* Fica no flow do HTML, não é alterada por top, left, right e bottom */
+.static { 
+    position: static;
+}
+
+/* Fica no flow do HTML, ela é alterada pelo top, left, right e bottom */
+.relative {
+    position: relative;
+    background-color: aqua;
+    top: 100px;
+    left: 50px;
+}
+
+/* Posiciona em qualquer lugar, e ela respeita o elemento antecessor */
+.absolute {
+    position: absolute;
+    background-color: crimson;
+    right: 0px;
+    top: 0px
+}
+
+/* Posiciona em qualquer lugar da tela, e é posicionada em relação ao HTML */
+.fixed {
+    position: fixed;
+    background-color: chartreuse;
+    width: 300px;
+    height: 500px;
+    right: 10px;
+    top: 10px;
+
+}
+
+/* Esta no flow do HTML, porém ao passar o scroll ela funciona como fixed */
+.sticky {
+    position: sticky;
+    background-color: deeppink;
+    top: 20px;
+}
+
+/* Float */
+
+.div-float {
+    overflow: auto;
+}
+
+.container {
+    padding: 50px
+}
+
+.img-float {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.p-float {
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Unidades */
+
+.pixel-1 {
+    background-color: #6a40c4;
+    width: 100px;
+    height: 100px;
+}
+
+.pixel-2 {
+    background-color: aqua;
+    width: 500px;
+    height: 100px;
+}
+
+.pai-porcentagem {
+    height: 500px;
+    width: 500px;
+    background-color: bisque;
+}
+
+.porcentagem-1 {
+    width: 50%;
+    height: 50%;
+    background-color: chartreuse;
+}
+
+.porcentagem-2 {
+    width: 50%;
+    height: 50%;
+    background-color: chocolate;
+}
+
+.porcentagem-3 {
+    width: 50%;
+    height: 50%;
+    background-color: darkslategray;
+}
+
+.pai-em {
+    font-size: 50px;
+}
+
+.em-1 {
+    width: 4em;
+    height: 4em;
+    background-color: antiquewhite;
+}
+
+.rem-1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: bisque;
+}
